@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hMonogame_GameLib", "hMonogame_GameLib\hMonogame_GameLib.csproj", "{1CFCBFDD-1F96-490A-9920-4001A42521E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hMonogame_GameLibContent", "hMonogame_GameLibContent\hMonogame_GameLibContent\hMonogame_GameLibContent.csproj", "{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "hMonogame_GameLibContentContent", "hMonogame_GameLibContent\hMonogame_GameLibContentContent\hMonogame_GameLibContentContent.contentproj", "{300B5D27-564C-4426-AC2E-FA5D4F667CAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Android|Any CPU = Android|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		iOS|Any CPU = iOS|Any CPU
+		Linux|Any CPU = Linux|Any CPU
+		OSX|Any CPU = OSX|Any CPU
+		PSM|Any CPU = PSM|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Windows|Any CPU = Windows|Any CPU
+		Windows8|Any CPU = Windows8|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.Android|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.Android|Any CPU.Build.0 = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.iOS|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.iOS|Any CPU.Build.0 = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.Linux|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.Linux|Any CPU.Build.0 = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.OSX|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.OSX|Any CPU.Build.0 = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.PSM|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.PSM|Any CPU.Build.0 = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.Windows|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.Windows|Any CPU.Build.0 = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.Windows8|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFCBFDD-1F96-490A-9920-4001A42521E5}.Windows8|Any CPU.Build.0 = Release|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.Android|Any CPU.ActiveCfg = Android|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.Android|Any CPU.Build.0 = Android|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.Debug|Any CPU.ActiveCfg = PSM|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.Debug|Any CPU.Build.0 = PSM|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.iOS|Any CPU.ActiveCfg = iOS|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.iOS|Any CPU.Build.0 = iOS|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.Linux|Any CPU.ActiveCfg = Linux|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.Linux|Any CPU.Build.0 = Linux|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.OSX|Any CPU.ActiveCfg = OSX|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.OSX|Any CPU.Build.0 = OSX|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.PSM|Any CPU.ActiveCfg = PSM|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.PSM|Any CPU.Build.0 = PSM|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.Release|Any CPU.ActiveCfg = PSM|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.Release|Any CPU.Build.0 = PSM|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.Windows|Any CPU.ActiveCfg = Windows|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.Windows|Any CPU.Build.0 = Windows|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.Windows8|Any CPU.ActiveCfg = Windows8|Any CPU
+		{0393B92C-4AE5-4191-92A3-E63DDC4F5BF4}.Windows8|Any CPU.Build.0 = Windows8|Any CPU
+		{300B5D27-564C-4426-AC2E-FA5D4F667CAF}.Android|Any CPU.ActiveCfg = Android|Any CPU
+		{300B5D27-564C-4426-AC2E-FA5D4F667CAF}.Debug|Any CPU.ActiveCfg = PSM|Any CPU
+		{300B5D27-564C-4426-AC2E-FA5D4F667CAF}.iOS|Any CPU.ActiveCfg = iOS|Any CPU
+		{300B5D27-564C-4426-AC2E-FA5D4F667CAF}.Linux|Any CPU.ActiveCfg = Linux|Any CPU
+		{300B5D27-564C-4426-AC2E-FA5D4F667CAF}.OSX|Any CPU.ActiveCfg = OSX|Any CPU
+		{300B5D27-564C-4426-AC2E-FA5D4F667CAF}.PSM|Any CPU.ActiveCfg = PSM|Any CPU
+		{300B5D27-564C-4426-AC2E-FA5D4F667CAF}.Release|Any CPU.ActiveCfg = PSM|Any CPU
+		{300B5D27-564C-4426-AC2E-FA5D4F667CAF}.Windows|Any CPU.ActiveCfg = Windows|Any CPU
+		{300B5D27-564C-4426-AC2E-FA5D4F667CAF}.Windows8|Any CPU.ActiveCfg = Windows8|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
