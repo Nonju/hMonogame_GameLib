@@ -13,8 +13,8 @@ namespace hMonogame_GameLib.ButtonsFolder {
 
         int nrToAdd; //Number to add/subtract 
 
-        public CounterBtn(Texture2D texture, Vector2 pos, float width, float height)
-            : base(texture, pos, width, height) {
+        public CounterBtn(Texture2D texture, Vector2 pos, float width, float height, Color baseColor)
+            : base(texture, pos, width, height, baseColor) {
             nrToAdd = 1; //set to standard addition Nr
         }
 

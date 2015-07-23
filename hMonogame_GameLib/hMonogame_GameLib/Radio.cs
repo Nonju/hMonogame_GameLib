@@ -82,7 +82,7 @@ namespace hMonogame_GameLib {
             radioRec = new Rectangle((int)radioPos.X, (int)radioPos.Y, (int)radioWidth, (int)radioHeight);
             songList = new List<string>();
             MediaPlayer.Volume = 0.5f; //standard volume value
-            song = content.Load<Song>("Sounds/BackInBlack"); //Default song
+            song = content.Load<Song>("Sounds/Radio/BackInBlack"); //Default song
 
             //songNameSpritefont
             currentSongName = "Back in Black";
@@ -97,7 +97,7 @@ namespace hMonogame_GameLib {
             prevSongBtnPos = new Vector2(radioPos.X + (radioWidth * 0.2f), radioPos.Y + radioBtnHeight);
             prevSongBtnWidth = radioWidth * 0.15f;
             prevSongBtnHeight = radioHeight * 0.3f;
-            prevSongBtn = new ButtonsFolder.CounterBtn(prevSongBtnTexture, prevSongBtnPos, prevSongBtnWidth, prevSongBtnHeight);
+            prevSongBtn = new ButtonsFolder.CounterBtn(prevSongBtnTexture, prevSongBtnPos, prevSongBtnWidth, prevSongBtnHeight, Color.White);
 
             //play/pause-btn
             playPauseBtnTexture = playBtnTexture = content.Load<Texture2D>("Images/Radio/PlayBtn.png");
@@ -105,14 +105,14 @@ namespace hMonogame_GameLib {
             playPauseBtnPos = new Vector2(radioPos.X + (radioWidth * 0.45f), radioPos.Y + radioBtnHeight);
             playPauseBtnWidth = radioWidth * 0.15f;
             playPauseBtnHeight = radioHeight * 0.3f;
-            playPauseBtn = new ButtonsFolder.BasicBtn(playPauseBtnTexture, playPauseBtnPos, playPauseBtnWidth, playPauseBtnHeight);
+            playPauseBtn = new ButtonsFolder.BasicBtn(playPauseBtnTexture, playPauseBtnPos, playPauseBtnWidth, playPauseBtnHeight, Color.White);
 
             //nextSongBtn
             nextSongBtnTexture = content.Load<Texture2D>("Images/Radio/NextBtn.png");
             nextSongBtnPos = new Vector2(radioPos.X + (radioWidth * 0.7f), radioPos.Y + radioBtnHeight);
             nextSongBtnWidth = radioWidth * 0.15f;
             nextSongBtnHeight = radioHeight * 0.3f;
-            nextSongBtn = new ButtonsFolder.CounterBtn(nextSongBtnTexture, nextSongBtnPos, nextSongBtnWidth, nextSongBtnHeight);
+            nextSongBtn = new ButtonsFolder.CounterBtn(nextSongBtnTexture, nextSongBtnPos, nextSongBtnWidth, nextSongBtnHeight, Color.White);
 
         }
 

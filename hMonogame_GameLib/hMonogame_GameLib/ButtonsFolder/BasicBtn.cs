@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.GamerServices;
 namespace hMonogame_GameLib.ButtonsFolder {
     class BasicBtn : Buttons {
 
-        public BasicBtn(Texture2D texture, Vector2 pos, float width, float height) : base(texture, pos, width, height) { }
+        public BasicBtn(Texture2D texture, Vector2 pos, float width, float height, Color baseColor) : base(texture, pos, width, height, baseColor) { }
 
     }
 }

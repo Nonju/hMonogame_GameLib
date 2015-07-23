@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Images\SpriteFont.spritefont</Source>
+      <Name>Images\SpriteFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\bin\PSM\Content\Images\SpriteFont.xnb</Output>
+      <Time>2015-06-22T03:25:02.5116058+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\BackInBlack.mp3</Source>
+      <Name>Sounds\BackInBlack</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\bin\PSM\Content\Sounds\BackInBlack.xnb</Output>
+      <Extra>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\bin\PSM\Content\Sounds\BackInBlack.wma</Extra>
+      <Time>2015-06-22T03:41:14+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\VivaLaVida.mp3</Source>
+      <Name>Sounds\VivaLaVida</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\bin\PSM\Content\Sounds\VivaLaVida.xnb</Output>
+      <Extra>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\bin\PSM\Content\Sounds\VivaLaVida.wma</Extra>
+      <Time>2015-06-22T03:41:14+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Radio\media_player_buttons_dark.png</Source>
+      <Name>Images\Radio\media_player_buttons_dark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\bin\PSM\Content\Images\Radio\media_player_buttons_dark.xnb</Output>
+      <Time>2015-06-22T03:42:40+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Radio\NextBtn.png</Source>
+      <Name>Images\Radio\NextBtn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\bin\PSM\Content\Images\Radio\NextBtn.xnb</Output>
+      <Time>2015-06-22T03:42:40+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Radio\PauseBtn.png</Source>
+      <Name>Images\Radio\PauseBtn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\bin\PSM\Content\Images\Radio\PauseBtn.xnb</Output>
+      <Time>2015-06-22T03:42:40+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Radio\PlayBtn.png</Source>
+      <Name>Images\Radio\PlayBtn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\bin\PSM\Content\Images\Radio\PlayBtn.xnb</Output>
+      <Time>2015-06-22T03:42:40+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Radio\PrevBtn.png</Source>
+      <Name>Images\Radio\PrevBtn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\bin\PSM\Content\Images\Radio\PrevBtn.xnb</Output>
+      <Time>2015-06-22T03:42:40+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Radio\StandardRadioBackground.png</Source>
+      <Name>Images\Radio\StandardRadioBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\bin\PSM\Content\Images\Radio\StandardRadioBackground.xnb</Output>
+      <Time>2015-06-22T03:42:40+02:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{300B5D27-564C-4426-AC2E-FA5D4F667CAF}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>PSM</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContentContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\obj\PSM\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContent\bin\PSM\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\MSBuild\MonoGame\v3.0\MonoGameContentProcessors.dll</Key>
+        <Value>2014-04-05T23:56:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2015-05-05T17:39:40.7024965+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

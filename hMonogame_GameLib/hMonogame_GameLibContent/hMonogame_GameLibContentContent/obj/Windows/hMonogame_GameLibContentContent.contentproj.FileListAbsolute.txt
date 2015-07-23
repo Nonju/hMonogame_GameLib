@@ -1,0 +1,2 @@
+C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContentContent\obj\Windows\hMonogame_GameLibContentContent.contentprojResolveAssemblyReference.cache
+C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLibContent\hMonogame_GameLibContentContent\obj\Windows\hMonogame_GameLibContentContent.contentprojResolveAssemblyReference.cache

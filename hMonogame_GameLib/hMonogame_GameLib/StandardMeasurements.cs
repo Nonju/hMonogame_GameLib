@@ -11,20 +11,20 @@ using Microsoft.Xna.Framework.GamerServices;
 namespace hMonogame_GameLib {
     public static class StandardMeasurements {
 
-        static float standardWidthUnit, standardHeightUnit;
+        static float widthUnit, heightUnit;
 
         public static void Load(GameWindow window) {
             UpdateMeasurements(window);
         }
 
         public static void UpdateMeasurements(GameWindow window) {
-            standardWidthUnit = window.ClientBounds.Width * 0.05f;
-            standardHeightUnit = window.ClientBounds.Height * 0.05f;
+            widthUnit = window.ClientBounds.Width * 0.05f;
+            heightUnit = window.ClientBounds.Height * 0.05f;
         }
 
         //properties
-        public static float StandardWidthUnit { get { return standardWidthUnit; } }
-        public static float StandardHeightUnit { get { return standardHeightUnit; } }
+        public static float WidthUnit { get { return widthUnit; } }
+        public static float HeightUnit { get { return heightUnit; } }
 
     }
 }

@@ -15,7 +15,7 @@ namespace hMonogame_GameLib {
         protected Vector2 pos;
         protected float width, height;
         protected Rectangle rec;
-        protected Color btnColor;
+        protected Color color;
 
         public GameObjects(Texture2D texture, Vector2 pos, float width, float height) {
             this.texture = texture;
@@ -100,14 +100,16 @@ namespace hMonogame_GameLib {
 
     class Buttons : GameObjects {
 
-        //protected Color btnColor;
+        protected Color baseColor;
 
-        public Buttons(Texture2D texture, Vector2 pos, float width, float height) : base(texture, pos, width, height) { }
+        public Buttons(Texture2D texture, Vector2 pos, float width, float height, Color baseColor) : base(texture, pos, width, height) {
+            this.baseColor = baseColor;
+        }
 
         public virtual void Draw(SpriteBatch spriteBatch, Color onHoverColor) {
-            if (OnHover()) { btnColor = onHoverColor; }
-            else { btnColor = Color.White; }
-            spriteBatch.Draw(texture, rec, btnColor);
+            if (OnHover()) { color = onHoverColor; }
+            else { color = baseColor; }
+            spriteBatch.Draw(texture, rec, color);
         }
 
     }//end Buttons

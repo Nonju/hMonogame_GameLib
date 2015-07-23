@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
@@ -11,7 +12,7 @@ using Microsoft.Xna.Framework.GamerServices;
 namespace hMonogame_GameLib {
     public class Animator {
 
-        Texture2D texture;
+        Texture2D texture; 
         float textureWidth, textureHeight; //width/height on whats drawn
         int frameWidth, frameHeight; //width/height on frames
         int startFrameY = 0; //startframe in Y-axis
