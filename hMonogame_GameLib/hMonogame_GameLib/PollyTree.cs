@@ -121,7 +121,8 @@ namespace hMonogame_GameLib {
         public virtual void Draw(SpriteBatch spriteBatch, Color onHoverColor) {
             if (OnHover()) { color = onHoverColor; }
             else { color = baseColor; }
-            spriteBatch.Draw(texture, rec, color);
+            //spriteBatch.Draw(texture, rec, color);
+            spriteBatch.Draw(texture, rec, sourceRec, color, rotationAngle, origin, SpriteEffects.None, 0f);
         }
 
         public Color SetBaseColor { set { baseColor = value; } }

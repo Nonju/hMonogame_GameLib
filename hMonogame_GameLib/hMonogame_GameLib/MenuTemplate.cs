@@ -28,10 +28,12 @@ namespace hMonogame_GameLib {
         int currentState;
         Animator btnAnimator;
 
-        public AnimationMenuItem(Texture2D texture, Vector2 pos, float width, float height, int frameWidth, int frameHeight, Color baseColor, int currentState)
+        public AnimationMenuItem(Texture2D texture, Vector2 pos, float width, float height, int frameWidth, int frameHeight, int nrOfXFrames, int timeToNextFrame, Color baseColor, int currentState)
             : base(texture, pos, width, height, baseColor) {
                 btnAnimator = new Animator(texture, width, height, frameWidth, frameHeight);
                 this.currentState = currentState;
+                btnAnimator.SetNrOfXFrames = nrOfXFrames;
+                btnAnimator.SetTimeToNextFrame = timeToNextFrame;
         }
 
         public void ButtonAnimationUpdate(GameTime gameTime, bool buttonIsSelected) {
@@ -81,13 +83,13 @@ namespace hMonogame_GameLib {
             MenuItem temp = new MenuItem(itemTexture, new Vector2(X, Y), textureWidth, textureHeight, itemColor, state);
             staticMenu.Add(temp);
         }
-        public void AddAnimatedItem(Texture2D itemSpredSheet, float textureWidth, float textureHeight, int frameWidth, int frameHeight, Color itemColor, int state) {
+        public void AddAnimatedItem(Texture2D itemSpredSheet, float textureWidth, float textureHeight, int frameWidth, int frameHeight, int nrOfXFrames, int timeToNextFrame, Color itemColor, int state) {
             //ItemHeights
             float X = basePos.X;
             float Y = basePos.Y + currentHeight;
             currentHeight += textureHeight + StandardMeasurements.HeightUnit; //height + spacing
 
-            AnimationMenuItem temp = new AnimationMenuItem(itemSpredSheet, new Vector2(X, Y), textureWidth, textureHeight, frameWidth, frameHeight, itemColor, state);
+            AnimationMenuItem temp = new AnimationMenuItem(itemSpredSheet, new Vector2(X, Y), textureWidth, textureHeight, frameWidth, frameHeight, nrOfXFrames, timeToNextFrame, itemColor, state);
             animatedMenu.Add(temp);
         }
 

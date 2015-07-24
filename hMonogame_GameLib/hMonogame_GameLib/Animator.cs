@@ -15,7 +15,7 @@ namespace hMonogame_GameLib {
         Texture2D texture;
         float textureWidth, textureHeight; //width/height on whats drawn
         int frameWidth, frameHeight; //width/height on frames
-        int staticFrame = 1; //default value for which frame to display when no commands are given to object
+        int staticFrame = 0; //default value for which frame to display when no commands are given to object
         int startFrameY = 0; //startframe in Y-axis
         int startFrameX = 0;
         bool isMoving = true;
@@ -60,7 +60,7 @@ namespace hMonogame_GameLib {
         public int StartFrameX { set { startFrameX = value; } }
         public int StartFrameY { set { startFrameY = value; } }
         public bool IsMoving { set { isMoving = value; } }
-        public int TimeToNext { set { timeToNext = value; } }
+        public int SetTimeToNextFrame { set { timeToNext = value; } }
         public int SetNrOfXFrames { set { xRow = value; } }
         public int SetNrOfYFrames { set { yRow = value; } }
 
