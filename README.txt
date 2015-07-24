@@ -23,3 +23,8 @@ StandardMeasurements: static class that contains two standardUnits
 that's a percentage of the screens width/height. Can be updated
 with its "update"-method incase of resolution-changes.
 
+MenuTemplate: a simple way to create an "menu-builder"-object that
+allows you to feed it with menubutton data such as an image and 
+enum state that returns when the button is clicked.
+Newest update even allows for animation of buttons when hovered.
+

@@ -12,10 +12,15 @@ using Microsoft.Xna.Framework.GamerServices;
 namespace hMonogame_GameLib {
     public class Animator {
 
-        Texture2D texture; 
+        Texture2D texture;
         float textureWidth, textureHeight; //width/height on whats drawn
         int frameWidth, frameHeight; //width/height on frames
+        int staticFrame = 1; //default value for which frame to display when no commands are given to object
         int startFrameY = 0; //startframe in Y-axis
+        int startFrameX = 0;
+        bool isMoving = true;
+        int timeToNext = 50; //default time until frameSwitch
+        int xRow = 1, yRow = 1; //default values on number of frames in spreadsheet
         float elapsedTime; //clock
         int currentFrame; // what frame you're on (X-axis)
         Rectangle sourceRec;
@@ -31,7 +36,7 @@ namespace hMonogame_GameLib {
             sourceRec = new Rectangle(frameWidth * currentFrame, startFrameY, frameWidth, frameHeight);
         }
 
-        public Rectangle Update(GameTime gameTime, int staticFrame, int startFrameX, int startFrameY, bool isMoving, int xRow, int yRow, int timeToNext) {
+        public Rectangle Update(GameTime gameTime) {
             elapsedTime += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
             if (!isMoving) { currentFrame = staticFrame; } //Object doesn't move
@@ -49,6 +54,15 @@ namespace hMonogame_GameLib {
             sourceRec.Y = startFrameY;
             return sourceRec;
         }
+
+        //Properties
+        public int SetStaticFrame { set { staticFrame = value; } }
+        public int StartFrameX { set { startFrameX = value; } }
+        public int StartFrameY { set { startFrameY = value; } }
+        public bool IsMoving { set { isMoving = value; } }
+        public int TimeToNext { set { timeToNext = value; } }
+        public int SetNrOfXFrames { set { xRow = value; } }
+        public int SetNrOfYFrames { set { yRow = value; } }
 
     }
 }

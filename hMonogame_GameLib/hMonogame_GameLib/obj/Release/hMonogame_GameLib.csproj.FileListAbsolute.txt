@@ -34,8 +34,6 @@ C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameL
 C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\SharpDX.MediaFoundation.xml
 C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\obj\Release\hMonogame_GameLib.dll
 C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\obj\Release\hMonogame_GameLib.pdb
-C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\BackInBlack.mp3
-C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\VivaLaVida.mp3
 C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Images\Radio\media_player_buttons_dark.png
 C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Images\Radio\NextBtn.png
 C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Images\Radio\PauseBtn.png
@@ -73,10 +71,6 @@ C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_
 C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Images\Radio\PlayBtn.xnb
 C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Images\Radio\PrevBtn.xnb
 C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Images\Radio\StandardRadioBackground.xnb
-C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\BackInBlack.xnb
-C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\VivaLaVida.xnb
-C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\BackInBlack.wma
-C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\VivaLaVida.wma
 C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Images\SpriteFont.spritefont
 C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\obj\Release\hMonogame_GameLib.csprojResolveAssemblyReference.cache
 C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\Radio\BackInBlack.xnb
@@ -85,3 +79,9 @@ C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameL
 C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\Radio\VivaLaVida.wma
 C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\Radio\BackInBlack.mp3
 C:\Users\Hannes\Documents\My Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\Radio\VivaLaVida.mp3
+C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\Radio\BackInBlack.xnb
+C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\Radio\VivaLaVida.xnb
+C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\Radio\BackInBlack.wma
+C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\Radio\VivaLaVida.wma
+C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\Radio\BackInBlack.mp3
+C:\Users\Hannes\Dropbox\Public\Ämnen\Programmering\hMonogame_GameLib\hMonogame_GameLib\bin\Release\Content\Sounds\Radio\VivaLaVida.mp3

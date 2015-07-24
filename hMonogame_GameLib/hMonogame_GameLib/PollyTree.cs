@@ -14,8 +14,11 @@ namespace hMonogame_GameLib {
         protected Texture2D texture;
         protected Vector2 pos;
         protected float width, height;
-        protected Rectangle rec;
+        protected Rectangle rec, sourceRec;
         protected Color color;
+
+        protected Vector2 origin;
+        protected float rotationAngle;
 
         public GameObjects(Texture2D texture, Vector2 pos, float width, float height) {
             this.texture = texture;
@@ -23,10 +26,15 @@ namespace hMonogame_GameLib {
             this.width = width;
             this.height = height;
 
+            origin = Vector2.Zero; //default value
+            rotationAngle = 0f; //default value
+
             rec = new Rectangle((int)pos.X, (int)pos.Y, (int)width, (int)height);
         }
         public virtual void Update() { }
-        public virtual void Draw(SpriteBatch spriteBatch) { }
+        public virtual void Draw(SpriteBatch spriteBatch) {
+            spriteBatch.Draw(texture, rec, sourceRec, color, rotationAngle, origin, SpriteEffects.None, 0f);
+        }
 
         MouseState mState;
         public virtual bool OnHover() { //if mouse is on top of object
@@ -70,6 +78,10 @@ namespace hMonogame_GameLib {
                 else { height = value; }
             }
         }
+        public Color SetColor { set { color = value; } }
+        public Vector2 Origin { get { return origin; } set { origin = value; } }
+        public float RotationAngle { get { return rotationAngle; } set { rotationAngle = value; } }
+
 
     }//end GameObjects
 
@@ -111,6 +123,8 @@ namespace hMonogame_GameLib {
             else { color = baseColor; }
             spriteBatch.Draw(texture, rec, color);
         }
+
+        public Color SetBaseColor { set { baseColor = value; } }
 
     }//end Buttons
 
