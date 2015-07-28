@@ -10,6 +10,9 @@ for each project. Less headache, more fun gamemaking!! ^^
 //UPDATES
 Going to be updating over time, adding additional items
 and tools. 
+Most of the librarys classes are using an built-in 
+tree of polymorphism-classes called "PollyTree". It 
+can be found in the GitHub-files.
 
 //Contains:
 Radio: mediaplayer that allows player to play music
@@ -27,4 +30,5 @@ MenuTemplate: a simple way to create an "menu-builder"-object that
 allows you to feed it with menubutton data such as an image and 
 enum state that returns when the button is clicked.
 Newest update even allows for animation of buttons when hovered.
+The animated button is using the built in animation-class Animator.
 
