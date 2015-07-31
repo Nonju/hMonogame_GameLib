@@ -48,22 +48,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Images\SpriteFont.spritefont">
-      <Name>SpriteFont</Name>
+    <Compile Include="Content1\Images\SpriteFont23.spritefont">
+      <Name>SpriteFont23</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Compile Include="Sounds\Radio\BackInBlack.mp3">
+    <Compile Include="Content1\Sounds\Radio\BackInBlack.mp3">
       <Name>BackInBlack</Name>
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Sounds\Radio\VivaLaVida.mp3">
+    <Compile Include="Content1\Sounds\Radio\VivaLaVida.mp3">
       <Name>VivaLaVida</Name>
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
@@ -71,41 +69,41 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Images\Radio\media_player_buttons_dark.png">
+    <Compile Include="Content1\Images\Radio\media_player_buttons_dark.png">
       <Name>media_player_buttons_dark</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Images\Radio\NextBtn.png">
+    <Compile Include="Content1\Images\Radio\NextBtn.png">
       <Name>NextBtn</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Images\Radio\PauseBtn.png">
+    <Compile Include="Content1\Images\Radio\PauseBtn.png">
       <Name>PauseBtn</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Images\Radio\PlayBtn.png">
+    <Compile Include="Content1\Images\Radio\PlayBtn.png">
       <Name>PlayBtn</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Images\Radio\PrevBtn.png">
+    <Compile Include="Content1\Images\Radio\PrevBtn.png">
       <Name>PrevBtn</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Images\Radio\StandardRadioBackground.png">
+    <Compile Include="Content1\Images\Radio\StandardRadioBackground.png">
       <Name>StandardRadioBackground</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

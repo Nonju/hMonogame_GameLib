@@ -8,11 +8,11 @@ using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.GamerServices;
 
 namespace hMonogame_GameLib {
-    class MenuItem : Buttons {
+    class StaticMenuItem : Buttons {
 
         int currentState;
         
-        public MenuItem(Texture2D texture, Vector2 pos, float width, float height, Color baseColor, int currentState)
+        public StaticMenuItem(Texture2D texture, Vector2 pos, float width, float height, Color baseColor, int currentState)
             : base(texture, pos, width, height, baseColor) {
             this.currentState = currentState;
         }
@@ -26,18 +26,33 @@ namespace hMonogame_GameLib {
 
         int currentState;
         Animator btnAnimator;
+        int nrOfXFrames;
+        bool stopOnLastFrame;
 
-        public AnimationMenuItem(Texture2D texture, Vector2 pos, float width, float height, int frameWidth, int frameHeight, int nrOfXFrames, int timeToNextFrame, Color baseColor, int currentState)
+        public AnimationMenuItem(Texture2D texture, Vector2 pos, float width, float height, int frameWidth, int frameHeight, int nrOfXFrames, int timeToNextFrame, bool stopOnLastFrame, Color baseColor, int currentState)
             : base(texture, pos, width, height, baseColor) {
                 btnAnimator = new Animator(texture, width, height, frameWidth, frameHeight);
                 this.currentState = currentState;
                 btnAnimator.SetNrOfXFrames = nrOfXFrames;
                 btnAnimator.SetTimeToNextFrame = timeToNextFrame;
+                this.nrOfXFrames = nrOfXFrames;
+                this.stopOnLastFrame = stopOnLastFrame;
         }
 
         public void ButtonAnimationUpdate(GameTime gameTime, bool buttonIsSelected) {
             sourceRec = btnAnimator.Update(gameTime);
-            btnAnimator.IsMoving = buttonIsSelected;
+            //btnAnimator.IsMoving = buttonIsSelected;
+            if (stopOnLastFrame && buttonIsSelected) {
+                if (btnAnimator.GetCurrentXFrame >= nrOfXFrames - 1) {
+                    btnAnimator.IsMoving = false;
+                    btnAnimator.SetStaticFrame = nrOfXFrames - 1;
+                }
+                else { btnAnimator.IsMoving = true; }
+            }
+            else { btnAnimator.IsMoving = buttonIsSelected; }
+            if (!buttonIsSelected) {
+                btnAnimator.SetStaticFrame = 0; //return to default value
+            }
         }
 
         //Properties
@@ -55,7 +70,7 @@ namespace hMonogame_GameLib {
          * Re-add if ever adding arrowkey-controlled menu-navigation.
          */
 
-        List<MenuItem> staticMenu; //for static menuObjects
+        List<StaticMenuItem> staticMenu; //for static menuObjects
         List<AnimationMenuItem> animatedMenu; //for animated menuObjects
         //int selected = 0; //First menuselection is always on location "0" in menuList
 
@@ -63,38 +78,47 @@ namespace hMonogame_GameLib {
         //double lastChange = 0; //time since last menuSelection
         int defaultMenuState;
         Vector2 basePos;
+        //private float tempXDistanceToRight;
         Color onSelectColor;
 
         public MenuTemplate(int defaultMenuState, Vector2 basePos, Color onSelectColor) {
-            staticMenu = new List<MenuItem>();
+            staticMenu = new List<StaticMenuItem>();
             animatedMenu = new List<AnimationMenuItem>();
             this.defaultMenuState = defaultMenuState;
             this.basePos = basePos;
+            //this.tempXDistanceToRight = basePos.X;
             this.onSelectColor = onSelectColor;
         }
 
-        public void AddStaticItem(Texture2D itemTexture, float textureWidth, float textureHeight, Color itemColor, int state) {
+        private void SetButtonPos(ref float X, ref float Y, float textureHeight, float textureWidth) {
+            /* if (Y + textureHeight >= StandardMeasurements.Window.ClientBounds.Height) {
+                tempXDistanceToRight = basePos.X + textureWidth * 1.3f;
+                currentHeight = 0; //resets currentHeight
+            } */
+            
             //ItemHeights
-            float X = basePos.X;
-            float Y = basePos.Y + currentHeight;
+            X = basePos.X;
+            Y = basePos.Y + currentHeight;
             currentHeight += textureHeight + StandardMeasurements.HeightUnit; //height + spacing
+        }
 
-            MenuItem temp = new MenuItem(itemTexture, new Vector2(X, Y), textureWidth, textureHeight, itemColor, state);
+        float X = 0, Y = 0;
+        public void AddStaticItem(Texture2D itemTexture, float textureWidth, float textureHeight, Color itemColor, int state) {
+            SetButtonPos(ref X, ref Y, textureHeight, textureWidth);
+
+            StaticMenuItem temp = new StaticMenuItem(itemTexture, new Vector2(X, Y), textureWidth, textureHeight, itemColor, state);
             staticMenu.Add(temp);
         }
-        public void AddAnimatedItem(Texture2D itemSpredSheet, float textureWidth, float textureHeight, int frameWidth, int frameHeight, int nrOfXFrames, int timeToNextFrame, Color itemColor, int state) {
-            //ItemHeights
-            float X = basePos.X;
-            float Y = basePos.Y + currentHeight;
-            currentHeight += textureHeight + StandardMeasurements.HeightUnit; //height + spacing
+        public void AddAnimatedItem(Texture2D itemSpredSheet, float textureWidth, float textureHeight, int frameWidth, int frameHeight, int nrOfXFrames, int timeToNextFrame, bool stopOnLastFrame, Color itemColor, int state) {
+            SetButtonPos(ref X, ref Y, textureHeight, textureWidth);
 
-            AnimationMenuItem temp = new AnimationMenuItem(itemSpredSheet, new Vector2(X, Y), textureWidth, textureHeight, frameWidth, frameHeight, nrOfXFrames, timeToNextFrame, itemColor, state);
+            AnimationMenuItem temp = new AnimationMenuItem(itemSpredSheet, new Vector2(X, Y), textureWidth, textureHeight, frameWidth, frameHeight, nrOfXFrames, timeToNextFrame, stopOnLastFrame, itemColor, state);
             animatedMenu.Add(temp);
         }
 
         public int Update(GameTime gameTime) {
 
-            foreach (MenuItem mI in staticMenu) {
+            foreach (StaticMenuItem mI in staticMenu) {
                 if (mI.IsClicked()) { return mI.State; }
             }
             foreach (AnimationMenuItem aMi in animatedMenu) {
@@ -107,7 +131,7 @@ namespace hMonogame_GameLib {
         }
 
         public void Draw(SpriteBatch spriteBatch) {
-            foreach (MenuItem mI in staticMenu) {
+            foreach (StaticMenuItem mI in staticMenu) {
                 mI.Draw(spriteBatch, onSelectColor);
             }
             foreach (AnimationMenuItem aMi in animatedMenu) {
@@ -117,6 +141,7 @@ namespace hMonogame_GameLib {
 
         //Properties
         //public int SetSelection { set { selected = value; } }
+        public Vector2 SetBasePos { set { basePos = value; currentHeight = 0; } }
 
     }//end class MenuTemplate
 }

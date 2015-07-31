@@ -58,10 +58,11 @@ namespace hMonogame_GameLib {
         public int SetStaticFrame { set { staticFrame = value; } }
         public int StartFrameX { set { startFrameX = value; } }
         public int StartFrameY { set { startFrameY = value; } }
-        public bool IsMoving { set { isMoving = value; } }
+        public bool IsMoving { get { return isMoving; } set { isMoving = value; } }
         public int SetTimeToNextFrame { set { timeToNext = value; } }
         public int SetNrOfXFrames { set { xRow = value; } }
         public int SetNrOfYFrames { set { yRow = value; } }
+        public int GetCurrentXFrame { get { return currentFrame; } }
 
     }
 }

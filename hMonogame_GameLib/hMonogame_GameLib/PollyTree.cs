@@ -88,25 +88,48 @@ namespace hMonogame_GameLib {
     class PhysicalObjects : GameObjects {
 
         protected bool isAlive = true;
+        protected Rectangle intersectRec;
 
-        public PhysicalObjects(Texture2D texture, Vector2 pos, float width, float height) : base(texture, pos, width, height) { }
+        public PhysicalObjects(Texture2D texture, Vector2 pos, float width, float height)
+            : base(texture, pos, width, height) {
+            intersectRec = new Rectangle((int)pos.X, (int)(pos.Y + (height * 0.9f)), (int)width, (int)(height * 0.1f));
+        }
 
-        public bool CollisionDetection(Rectangle otherRec) {
-            return rec.Intersects(otherRec);
+        public bool CollisionDetection(PhysicalObjects otherObject) {
+            //Update intersectRec
+            UpdateIntersectRec();
+            otherObject.UpdateIntersectRec();
+
+            if (intersectRec.Intersects(otherObject.intersectRec)) { return true; }
+            else { return false; }
+
+        }
+
+        protected void UpdateIntersectRec() {
+            intersectRec.X = (int)pos.X;
+            intersectRec.Y = (int)(pos.Y + (height * 0.9f));
         }
 
         //Properties
         public bool IsAlive { get { return isAlive; } set { isAlive = value; } }
-    }//end PhysicalObjects
+
+    }//end class PhysicalObjects
 
     class MovingObjects : PhysicalObjects {
 
         protected Vector2 speed;
+        protected bool isMoving;
 
         public MovingObjects(Texture2D texture, Vector2 pos, float width, float height, Vector2 speed)
             : base(texture, pos, width, height) {
             this.speed = speed;
+            isMoving = true; //default value
         }
+
+        //Properties
+        public float SpeedX { get { return speed.X; } set { speed.X = value; } } //for altering the objects X-axis-speed
+        public float SpeedY { get { return speed.Y; } set { speed.Y = value; } } //for altering the objects Y-axis-speed
+        public bool IsMoving { get { return isMoving; } set { isMoving = value; } }
 
     }//end MovingObjects
 
@@ -128,5 +151,21 @@ namespace hMonogame_GameLib {
         public Color SetBaseColor { set { baseColor = value; } }
 
     }//end Buttons
+
+    class Blocks : PhysicalObjects {
+
+        protected string blockName;
+
+        public Blocks(Texture2D texture, Vector2 pos, float width, float height, string blockName)
+            : base(texture, pos, width, height) {
+            if (blockName == null) { this.blockName = "EmptyBlock"; }
+            else { this.blockName = blockName; }
+        }
+
+
+        //Properties
+        public string BlockName { get { return blockName; } }
+
+    }//end Blocks
 
 }

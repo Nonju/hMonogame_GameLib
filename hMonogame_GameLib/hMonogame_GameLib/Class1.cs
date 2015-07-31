@@ -12,8 +12,6 @@ namespace hMonogame_GameLib
 {
     public class Class1 {
 
-
-
         //README - sortof
 
         /* Gamelibrary for the monogame gamelibrary containing 
